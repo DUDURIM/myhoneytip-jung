@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "tip-example",
-    "slug": "tip-example",
+    "name": "sparta-myhoneytip-jung",
+    "slug": "sparta-myhoneytip-jung",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -24,10 +24,31 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.dudurim.spartamyhoneytipjung",
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "86df81bc-bce7-4731-adc1-eab870e7f03d"
+      }
     }
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-6421309848062478~9578090703",
+    "ios_app_id": "ca-app-pub-6421309848062478~4364829450"
   }
 }
